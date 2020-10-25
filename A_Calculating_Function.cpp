@@ -8,16 +8,14 @@ using namespace std;
 
 int main()
 {
-	int f;	cin>>f;
-
-	int n;	cin>>n;
-	string S;	cin>>S;
-
-	int i{0},j{S.size()-1};
-
-	while(i<j)
-	{
-		
-	}
-
+    ll n;   cin>>n;
+    ll sum{0};
+    if(n%2==0)
+        sum = n/2;
+    else
+    {
+        sum = (n/2+1)*(-1);
+    }
+    
+    cout << sum << endl;
 }

@@ -1,4 +1,6 @@
 #define ll long long 
+
+
 const int INT_MAX = 2147483647;
 const int INT_MIN = -2147483647;
 
@@ -8,16 +10,14 @@ using namespace std;
 
 int main()
 {
-	int f;	cin>>f;
+    int n;  cin>>n;
+    int sum{0};
+    while(n--)
+    {
+        int d;  cin>>d;
 
-	int n;	cin>>n;
-	string S;	cin>>S;
+        sum+=d;
+    }
 
-	int i{0},j{S.size()-1};
-
-	while(i<j)
-	{
-		
-	}
-
+    cout << sum%4 + sum/4 <<endl;
 }
