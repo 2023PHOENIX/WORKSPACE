@@ -9,7 +9,6 @@ using namespace std;
 int main()
 {
     int n;  cin>>n;
-    // first in last out Queue
     queue<int> one,two,three;
 
     for(int i=1;i<=n;i++)
@@ -22,28 +21,28 @@ int main()
             two.push(i);
         if(d==3)
             three.push(i);
-
+            
     }
-
-
-
-    int mini = min(one.size(),max(two.size(),three.size()));
-
-    cout<<mini;
-
-    for(int i=1;i<=mini;i++)
+    int mi = min(one.size(), min(two.size(),three.size()));
+    cout<<mi<<endl;
+    
+    
+    for(int i=1;i<=mi;i++)
     {
         cout<<one.front()<<" "<<two.front()<<" "<<three.front()<<endl;
+
         one.pop();
         two.pop();
         three.pop();
-
     }
-
+    
+   
     
 
-    
-    
+
+
+
+
 
 
 
