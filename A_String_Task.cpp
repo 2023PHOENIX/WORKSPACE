@@ -10,21 +10,20 @@ using namespace std;
 
 int main()
 {
-    string S;   cin>>S;
+   string s;    cin>>s;
+    char d{'.'};
+   string nw;
+   transform(s.begin(),s.end(),s.begin(),::tolower);
 
-    transform(S.begin(),S.end(),S.begin(),::tolower);
+   for(auto i : s)
+   {
+       if(i!='a'&&i!='o'&&i!='y'&&i!='e'&&i!='u'&&i!='i')
+                {
 
-    for(int i=0;i<S.size();i++)
-    {
-        if(S.at(i)=='a'||S.at(i)=='e'||S.at(i)=='o'||S.at(i)=='u'||S.at(i)=='i'||S.at(i)=='y')
-            S.erase(S.begin()+i);
-        else
-        {
-            char s = '.';
-            S.at(i-1)+=s;
-        }
-        
-    }
-    cout << S;
+                    nw.push_back(d);
+                    nw.push_back(i);
+                }
+   }
+   cout<<nw<<endl;
     
 }

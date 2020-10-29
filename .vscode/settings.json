@@ -10,7 +10,17 @@
         "xutility": "cpp",
         "xstring": "cpp",
         "random": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "utility": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "initializer_list": "cpp",
+        "list": "cpp",
+        "regex": "cpp",
+        "valarray": "cpp",
+        "vector": "cpp",
+        "cstdlib": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
