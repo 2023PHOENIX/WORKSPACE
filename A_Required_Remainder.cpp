@@ -3,25 +3,32 @@ const int INT_MAX = 2147483647;
 const int INT_MIN = -2147483647;
 
 #include<bits/stdc++.h>
+
 using namespace std;
 
 int main()
 {
-    int t;  cin>>t;
+    ll t;   cin>>t;
 
     while(t--)
     {
-        ll n;  cin>>n;
+        ll x,y,n;
 
+        cin>>x>>y>>n;
 
-        if(n>2)
+        if(n%x!=0)
         {
-            cout<<(n+1)/2 -1 <<endl;
+           n = n - n%x;
+            n = n - abs(y-x);
+            cout<<n<<endl;
         }
         else
         {
-            cout<<0<<endl;
+            cout<<n<<endl;
         }
+        
+
+        
         
     }
 }

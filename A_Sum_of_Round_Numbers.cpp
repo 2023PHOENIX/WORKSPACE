@@ -5,6 +5,8 @@ const int INT_MIN = -2147483647;
 #include<bits/stdc++.h>
 
 using namespace std;
+
+
 int cd(int n)
 {
     int c{0};
@@ -22,7 +24,7 @@ int main()
     int t;  cin>>t;
    while(t--){
     int n;  cin>>n;
-   cout<<cd(n)*10<<endl;
+   \\cout<<cd(n)*10<<endl;
        while(n>0)
     {
         int k = cd(n)*10;

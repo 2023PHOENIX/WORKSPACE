@@ -1,27 +1,33 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    string S;   cin>>S;
-    bool lower{false};
-    for(auto i: S)
+    string s;
+    char u;
+    bool c = true;
+    cin >> s;
+
+    for(int i = 1; i < s.length(); i++)
     {
-        if(islower(i))
+        if(islower(s[i]))
         {
-            lower=true;break;
+            c = false;
         }
     }
-    if(lower)
+
+    if(c == true)
     {
-        transform(S.begin(),S.end(),S.begin(),::tolower);
-        S.at(0) = toupper(S.at(0));
-        cout<<S;
+        for(int j = 0; j < s.length(); j++)
+        {
+            if(islower(s[j]))
+                u = toupper(s[j]);
+            else
+                u = tolower(s[j]);
+            cout << u;
+        }
     }
     else
-    {
-        cout<<S;
-    }
-
-    
+        cout << s;
+    return 0;
 }
