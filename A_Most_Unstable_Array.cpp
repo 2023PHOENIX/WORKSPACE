@@ -6,20 +6,24 @@ const int INT_MIN = -2147483647;
 
 using namespace std;
 
-#include<bits/stdc++.h>
-
-using namespace std;
-
 int main()
 {
-    ios_base::sync_with_stdio(false); 
-    cin.tie(NULL); 
     int t;  cin>>t;
 
     while(t--)
     {
-        int n;  cin>>n;
-        cout<<n/2<<endl;
+        ll n,m;
+        cin>>n>>m;
+
+        if(n<=1)
+            cout<<0<<endl;
+        else if(n==2)
+            cout<<m<<endl;
+        else 
+            cout<<m*2<<endl;
+        
+        
+
+
     }
-    
 }

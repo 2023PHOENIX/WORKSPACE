@@ -20,7 +20,8 @@
         "regex": "cpp",
         "valarray": "cpp",
         "vector": "cpp",
-        "cstdlib": "cpp"
+        "cstdlib": "cpp",
+        "xiosbase": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
