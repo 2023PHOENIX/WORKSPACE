@@ -8,12 +8,15 @@ int main()
     ios_base:: sync_with_stdio(false);
     cin.tie(NULL);
 
-    ll n;  cin>>n;
-    int c{0};
-    while(n)
-    {
-        c++;
-        n = n&(n-1);
-    }
-    cout<<c<<endl;
+    int n;  cin>>n;
+
+    string s;   cin>>s;
+    int c1{0};
+    for(auto i : s)
+        if(i=='1')
+            c1++;
+    
+    int k = s.size()-c1;
+
+    cout<<abs(k-c1);
 }

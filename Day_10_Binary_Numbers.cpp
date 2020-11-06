@@ -8,12 +8,14 @@ int main()
     ios_base:: sync_with_stdio(false);
     cin.tie(NULL);
 
-    ll n;  cin>>n;
-    int c{0};
-    while(n)
-    {
+    ll n,c{0},sum{0};  cin>>n;
+    
+   while(n>1)
+   {
+       if(n&1)
         c++;
-        n = n&(n-1);
-    }
+    n = n/2;
+        
+   }
     cout<<c<<endl;
 }

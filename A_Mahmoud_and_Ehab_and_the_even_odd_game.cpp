@@ -9,11 +9,16 @@ int main()
     cin.tie(NULL);
 
     ll n;  cin>>n;
-    int c{0};
-    while(n)
+
+    bool player{0};
+    //mahmoud
+
+    if(n%2==0)
+          player = 0;
+    else
     {
-        c++;
-        n = n&(n-1);
+        player = 1;
     }
-    cout<<c<<endl;
+    (player)?cout<<"Ehab":cout<<"Mahmoud";
+    
 }

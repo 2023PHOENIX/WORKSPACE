@@ -8,12 +8,16 @@ int main()
     ios_base:: sync_with_stdio(false);
     cin.tie(NULL);
 
-    ll n;  cin>>n;
-    int c{0};
-    while(n)
+    int n;  cin>>n;
+    vector<int> A;
+    while(n--)
     {
-        c++;
-        n = n&(n-1);
+        int d;  cin>>d;
+        A.push_back(d);
     }
-    cout<<c<<endl;
+
+    for(auto it=A.rbegin();it!=A.rend();it++)
+    {
+        cout<<*it<<" ";
+    }
 }
