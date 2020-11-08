@@ -7,14 +7,17 @@ int main()
 {
     ios_base:: sync_with_stdio(false);
     cin.tie(NULL);
-
-    ll t;  cin>>t;
+    srand(time(0));
+    int t;  cin>>t;
 
     while(t--)
     {
-        ll a,b,c,d;
-        cin>>a>>b>>c>>d;
+        int n;  cin>>n;
 
-        cout<<b<<" "<<c<<" "<<c<<endl;
+        for(int i=0;i<n;i++)
+        {
+            cout<<1<<" ";
+        }
+        cout<<endl;
     }
 }

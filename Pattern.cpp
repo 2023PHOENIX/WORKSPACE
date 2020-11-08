@@ -7,14 +7,20 @@ int main()
 {
     ios_base:: sync_with_stdio(false);
     cin.tie(NULL);
+    
+    int n ; cin>>n;
 
-    ll t;  cin>>t;
+    int k{n-1};
 
-    while(t--)
+    for(int i=1;i<=n;i++)
     {
-        ll a,b,c,d;
-        cin>>a>>b>>c>>d;
+        for(int j=1;j<=n;j++)
+        {
+            if(k==j)
+                cout<<"*";
+            cout<<" ";
 
-        cout<<b<<" "<<c<<" "<<c<<endl;
+            k--;
+        }
     }
 }

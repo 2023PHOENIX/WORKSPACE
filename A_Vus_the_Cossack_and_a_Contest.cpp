@@ -8,13 +8,15 @@ int main()
     ios_base:: sync_with_stdio(false);
     cin.tie(NULL);
 
-    ll t;  cin>>t;
+    int N,n,m;
 
-    while(t--)
+    cin>>N>>n>>m;
+
+    if(N<=n && N<=m)
+        cout<<"Yes\n";
+    else
     {
-        ll a,b,c,d;
-        cin>>a>>b>>c>>d;
-
-        cout<<b<<" "<<c<<" "<<c<<endl;
+        cout<<"No\n";
     }
+    
 }

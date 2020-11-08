@@ -8,13 +8,19 @@ int main()
     ios_base:: sync_with_stdio(false);
     cin.tie(NULL);
 
-    ll t;  cin>>t;
-
-    while(t--)
+    string a,b;
+    cin>>a>>b;
+    vector<int> A;
+    int i{0};
+    while(i<a.size())
     {
-        ll a,b,c,d;
-        cin>>a>>b>>c>>d;
-
-        cout<<b<<" "<<c<<" "<<c<<endl;
+        int k = a[i] ^ b[i];
+        A.push_back(k);
+        i++;
     }
+
+   
+
+    for(auto i: A)
+        cout<<i;
 }

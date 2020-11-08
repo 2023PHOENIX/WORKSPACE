@@ -8,13 +8,15 @@ int main()
     ios_base:: sync_with_stdio(false);
     cin.tie(NULL);
 
-    ll t;  cin>>t;
-
+    int t;  cin>>t;
     while(t--)
     {
-        ll a,b,c,d;
-        cin>>a>>b>>c>>d;
+        int l,r;    cin>>l>>r;
 
-        cout<<b<<" "<<c<<" "<<c<<endl;
+        if(2*l<=r)
+            cout<<l<<" "<<2*l<<endl;
+        else 
+            cout<<-1<<" "<<-1<<endl;
+            
     }
 }

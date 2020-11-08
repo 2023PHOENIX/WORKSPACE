@@ -8,24 +8,32 @@ int main()
     ios_base:: sync_with_stdio(false);
     cin.tie(NULL);
 
-    int t;  cin>>t;
+    int t;
+        cin>>t;
 
-    while(t--)
-    {
-        int x,n,m;  cin>>x>>n>>m;
-        bool defeat{false};
-        
-        while(n>0)
+        while(t--)
         {
-            x = x/2 + 10;
-            n--;
+            int Q,n,m;
+
+            cin>>Q>>n>>m;
+
+            while(n--)
+            {
+                if(Q>20)
+                    Q = Q/2 + 10;
+                else 
+                    break;
+            }
+            while(m--)
+            {
+                if(Q<=0)
+                    break;
+                else
+                {
+                    Q = Q-10;
+                }
+                
+            }
+            (Q<=0)?cout<<"YES\n":cout<<"NO\n";
         }
-        while(m>0)
-        {
-            x = x - 10;
-            m--;
-        }
-        (x<=0)?cout<<"YES\n":cout<<"NO\n";
-        
-    }
 }
