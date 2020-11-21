@@ -1,35 +1,23 @@
-#include <iostream>
-#include <ctype.h>
-#include <set>
+const int INT_MAX = 2147483647;
+const int INT_MIN = -2147483647;
+#include<bits/stdc++.h>
 using namespace std;
-
-void swap(char *a,char *b)
-{
-    char temp = *a;
-    *a = *b;
-    *b = temp;
-}
+typedef long long int ll;
 int main()
 {
-   int n;   cin>>n;
-   int t;   cin>>t;
-   int c{0};
+        ios_base:: sync_with_stdio(false);
+        cin.tie(NULL);
+        
+        int n,t;    cin>>n>>t;
+        string s;   cin>>s;
+        while(t--)
+        {
+            for(int i=1;i<n;i++)
+            {
+                if(s[i-1] =='B' and s[i]=='G')
+                    s[i-1]='G',s[i]= 'B',i++;
+            }
+        }
+        cout<<s<<endl;
 
-   string s;    cin>>s;
-
-  while(t--)
-  {
-       for(int i=0;i<s.size()-1;i++)
-   {
-       if(s.at(i)<s.at(i+1))
-          { 
-               swap(s.at(i),s.at(i+1));
-               c++;
-               i++;
-          }   
-
-   }
-  
-  }
-   cout<<s<<endl;
 }

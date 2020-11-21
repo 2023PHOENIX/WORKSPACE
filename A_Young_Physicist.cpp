@@ -1,36 +1,23 @@
-#define ll long long 
-
-
 const int INT_MAX = 2147483647;
 const int INT_MIN = -2147483647;
-
 #include<bits/stdc++.h>
-
 using namespace std;
-
+typedef long long int ll;
 int main()
 {
-    int t;  cin>>t;
+    ios_base:: sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int n;  cin>>n;
     int sx{0},sy{0},sz{0};
-    while(t--)
+    while(n--)
     {
+        int a,b,c;
+        cin>>a>>b>>c;
 
-        
-
-        int x,y,z;
-        cin>>x>>y>>z;
-
-        sx +=x;
-        sy+=y;
-        sz+=z;
-
-
+        sx += a;
+        sy += b;
+        sz += c;
     }
-    if(sx==0 && sy==0 && sz==0)
-      {  cout <<"YES\n";}
-        else
-        {
-            cout <<"NO\n";
-        }
-        
+    (sx==0 and sy==0 and sz==0)?cout<<"YES\n":cout<<"NO\n";
 }
